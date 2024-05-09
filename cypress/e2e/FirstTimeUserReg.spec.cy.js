@@ -6,10 +6,7 @@ describe('RegistrationPage', () => {
     
   })
   
-  afterEach(()=>{
   
-     cy.get("a[href='/parabank/logout.htm']").click()
-  })
   
     it('user with invalid credentials and password recovery', () => {
   
@@ -42,7 +39,7 @@ describe('RegistrationPage', () => {
     cy.get("input[id='customer.address.zipCode']").type("yyyyyy")
     cy.get("input[id='customer.phoneNumber']").type("23401")
     cy.get("input[id='customer.ssn']").type("1234567890")
-    cy.get("input[id='customer.username']").type("alao19992")
+    cy.get("input[id='customer.username']").type("alao97792")
     cy.get("input[id='customer.password']").type("Alao12@")
     cy.get("input[id='repeatedPassword']").type("Alao12@")
     cy.get("input[value='Register']").click()
